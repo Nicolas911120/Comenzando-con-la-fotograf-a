@@ -1,0 +1,160 @@
+
+@media (max-width: 899px) {
+	#contenido{
+		width: 100%;
+	}
+
+	#img-secundaria div{
+		width: 100%
+	}
+
+	footer div{
+		width: 100%;
+	}
+
+	.fila div{
+		width: 100%;
+	}
+}
+
+@media (min-width: 900px) {
+	#contenido{
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	#img-secundaria{
+		display:flex;
+		flex-direction:row;
+	}
+	#img-secundaria div{
+		width: 50%
+	}
+
+	footer{
+		display:flex;
+		flex-direction:row;
+	}
+
+	footer div{
+		width: 25%;
+	}
+
+	#galeria{
+		display:flex;
+		flex-direction:column;
+	}
+
+	.fila{
+		display:flex;
+		flex-direction:row;
+	}
+
+	.fila div{
+		width: 33.33%;
+	}
+}
+
+body{
+	background-color: #02010a;
+	font-family: 'Dancing Script', cursive;
+}
+
+footer{
+	background: #C6d5c5;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+footer div{
+	text-align: center;
+}
+
+header{
+	background-color: #5b7989;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+header h1{
+	text-align: center;
+	color: white;
+	text-shadow: 0 0 2px #02010a;
+}
+
+header a{
+	text-decoration: none;
+}
+
+#menu-principal{
+	display:flex;
+	flex-direction:row;
+}
+
+header #menu-principal div{
+	text-align: center;
+	padding:10px;
+	margin:10px;
+	background-color:white;
+	width:33.3%;
+	border-radius: 10px;
+}
+
+#img-principal{
+	width: 100%;
+	background-color: #82c3a6;
+	text-align: center;
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+
+#img-principal img{
+	filter: drop-shadow(0 0 2px #82c3a6);
+	border: 2px solid black;
+}
+
+#img-secundaria, .galeria{
+	background-color:#d5c75f;
+	text-align: center;
+	border: 1px;
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+
+.fila img{
+	filter: drop-shadow(0 0 2px #02010a);
+	border: 2px solid black;
+}
+
+#paisaje a img{
+	filter: drop-shadow(0 0 2px #02010a);
+	border: 2px solid black;
+	transition: transform 1s;
+}
+
+#paisaje a img:hover{
+	filter: drop-shadow(0 0 10px #82c3a6);
+	transform: rotate(10deg);
+}
+
+#retrato a img{
+	filter: drop-shadow(0 0 2px #02010a);
+	border: 2px solid black;
+	transition: transform 1s;
+}
+
+#retrato a img:hover{
+	filter: drop-shadow(0 0 10px #82c3a6);
+	transform: translate(20px,-5px);
+}
+
+.efectoblur{
+	filter: blur(10px);
+}
+
+.efectogris{
+	filter: grayscale(100%);
+}
+
+.efectosepia{
+	filter: sepia(90%);
+}
